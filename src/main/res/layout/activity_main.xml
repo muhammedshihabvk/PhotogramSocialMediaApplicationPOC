@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4a463a"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="411dp"
+        android:layout_height="28dp"
+        android:background="#706c5f"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/albumbtn"
+        app:layout_constraintVertical_bias="0.998" />
+
+    <View
+        android:id="@+id/postview"
+        android:layout_width="411dp"
+        android:layout_height="28dp"
+        android:background="#706c5f"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/postbtn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="136dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="236dp"
+        android:background="#7CB342"
+        android:shadowRadius="10"
+        android:text="Post"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postview" />
+
+    <Button
+        android:id="@+id/albumbtn"
+        android:layout_width="139dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="20dp"
+        android:background="#F4511E"
+        android:text="Album"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.753"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postbtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
